@@ -7,13 +7,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Lato&display=swap" rel="stylesheet">
     <style>
         /* General styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', Arial, sans-serif;
+            background: linear-gradient(135deg, #f0f4f8, #d9eaf5);
+            color: #4e4e4e;
+        }
+
         h1, h2, h3, h4, h5, h6 {
             font-family: "Playfair Display SC", serif;
             color: #333333;
         }
 
         a, p, li {
-            font-family: "Lato", Arial, sans-serif;
             color: #4e4e4e;
             font-size: 1em;
             line-height: 1.75em;
@@ -21,32 +28,39 @@
 
         a:hover {
             text-decoration: none !important;
-            color: #333333 !important;
-            transition: all 0.2s ease-in-out;
+            color: #0066cc !important;
+            transition: color 0.3s ease-in-out;
         }
 
         .container {
             margin: auto;
-            max-width: 662px;
-            padding: 0 20px;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
 
         .header {
-            background-color: #4CAF50;
+            background-color: #007acc;
             color: white;
             padding: 20px;
             text-align: center;
+            border-bottom: 5px solid #005fa3;
         }
 
         .header h1 {
-            font-size: 1.8em;
+            font-size: 2em;
             font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         .header .role {
-            font-size: 1.5em;
+            font-size: 1.4em;
             font-weight: bold;
             margin: 10px 0;
+            color: #f0f4f8;
         }
 
         .button-link {
@@ -55,27 +69,48 @@
             padding: 10px 20px;
             font-size: 0.9em;
             color: white;
-            background-color: #333;
+            background-color: #005fa3;
             border: none;
-            border-radius: 5px;
+            border-radius: 25px;
             text-decoration: none;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 3px 10px rgba(0, 95, 163, 0.4);
         }
 
         .button-link:hover {
-            background-color: #555;
+            background-color: #004d80;
+            transform: translateY(-2px);
         }
 
         .intro {
             padding: 40px 0;
             overflow-x: hidden;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style-type: disc;
         }
 
         footer {
             padding: 20px 0;
             text-align: center;
-            background: #f4f4f4;
+            background: #f0f4f8;
+            color: #007acc;
+            border-top: 2px solid #005fa3;
         }
     </style>
 </head>
