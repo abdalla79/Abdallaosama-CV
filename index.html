@@ -6,44 +6,31 @@
     <title>Abdalla Osama Hassan - CV</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Lato&display=swap" rel="stylesheet">
     <style>
-        /* Insert the CSS code you provided here */
+        /* General styling */
         h1, h2, h3, h4, h5, h6 {
-          font-family: "Playfair Display SC", serif;
-          color: #333333; 
+            font-family: "Playfair Display SC", serif;
+            color: #333333;
         }
 
         a, p, li {
-          font-family: "Lato", Arial, sans-serif;
-          color: #4e4e4e;
-          font-size: 1em;
-          line-height: 1.75em; 
+            font-family: "Lato", Arial, sans-serif;
+            color: #4e4e4e;
+            font-size: 1em;
+            line-height: 1.75em;
         }
 
         a:hover {
-          text-decoration: none !important;
-          color: #333333 !important;
-          transition: all 0.2s ease-in-out;
+            text-decoration: none !important;
+            color: #333333 !important;
+            transition: all 0.2s ease-in-out;
         }
 
         .container {
-          margin: auto;
-          max-width: 662px;
-          padding: 0 20px; 
+            margin: auto;
+            max-width: 662px;
+            padding: 0 20px;
         }
 
-        @media only screen and (max-width: 767px) {
-          .intro img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto; 
-          }
-
-          footer {
-            text-align: center; 
-          } 
-        }
-
-        /* Additional CSS styles */
         .header {
             background-color: #4CAF50;
             color: white;
@@ -51,22 +38,44 @@
             text-align: center;
         }
 
+        .header h1 {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .header .role {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .button-link {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 0.9em;
+            color: white;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-link:hover {
+            background-color: #555;
+        }
+
         .intro {
-          padding: 95px 0px 70px 0px;
-          overflow-x: hidden; 
-        }
-
-        .main-nav {
-          background: #f4f4f4;
-          padding-top: 23px; 
-        }
-
-        .section .container {
-          position: relative; 
+            padding: 40px 0;
+            overflow-x: hidden;
         }
 
         footer {
-          padding: 50px 0px 0px 0px; 
+            padding: 20px 0;
+            text-align: center;
+            background: #f4f4f4;
         }
     </style>
 </head>
@@ -75,14 +84,17 @@
     <!-- Header section -->
     <div class="header">
         <h1>Abdalla Osama Hassan</h1>
-        <p>Mechanical Power Engineer</p>
+        <p class="role">Mechanical Power Engineer</p>
+        <!-- Contact buttons -->
+        <a href="tel:+201094467312" class="button-link">📞 +201094467312</a>
+        <a href="mailto:abdallaosama11@outlook.com" class="button-link">📧 abdallaosama11@outlook.com</a>
     </div>
 
     <!-- Main content section -->
     <div class="container">
         <div class="intro">
             <h2>Professional Summary</h2>
-            <p>Mechanical Power Engineer with a strong foundation in material engineering, currently employed as a Mechanical Technical Office Engineer at Al Basmalah for Trading and Contracting. Demonstrated expertise in enhancing internal combustion engine efficiency, achieving significant improvements in fuel economy and emission reduction. Skilled in research, experimentation, and the practical application of innovative engineering solutions with a focus on sustainability and performance excellence.</p>
+            <p>Mechanical Power Engineer with extensive experience in piping systems and materials engineering. Proven ability in executing, supervising, and ensuring quality in piping projects, including pressure testing and validation of piping loops. Skilled in analyzing isometric drawings, P&ID diagrams, and 3D models for system completeness. Strong background in material selection, quality control, and compliance with industry standards. Committed to delivering efficient engineering solutions and contributing to project success through meticulous planning and execution.</p>
 
             <h2>Education</h2>
             <p>B.Sc. in Mechanical Power Engineering, Suez Canal University, Egypt | 2022</p>
@@ -97,22 +109,53 @@
                 <li>Pressure Test Readiness: Assessed loop configuration and connections, ensuring all criteria for pressure testing were met.</li>
                 <li>Documentation & Reporting: Collaborated with the project team to generate comprehensive reports on loop preparation, test results, and required adjustments.</li>
                 <li>Quality Assurance: Conducted detailed quality checks to verify compliance with project specifications and safety standards before testing.</li>
-                <li>Material Selection & Compliance: Worked with engineering teams to choose appropriate materials, ensuring adherence to project and industry standards.</li>            
+                <li>Material Selection & Compliance: Worked with engineering teams to choose appropriate materials, ensuring adherence to project and industry standards.</li>
             </ul>
 
             <h3>Heavy Equipment Maintenance and Inspection Engineer, Military Service | 2023 – 2024</h3>
             <ul>
-                <li>Performed routine and preventive maintenance on heavy equipment such as excavators and loaders.</li>
-                <li>Implemented safety protocols to ensure safe equipment operation and regulatory compliance.</li>
+                <li>Performed routine and preventive maintenance on a variety of heavy equipment including excavators, loaders, and bulldozers.</li>
+                <li>Implemented safety protocols to ensure the safe operation of equipment and adherence to regulatory standards.</li>
             </ul>
 
-            <h2>Skills</h2>
+            <h3>Materials Engineer, Petrojet Eastern Department | February 2022 – March 2023</h3>
+            <ul>
+                <li>Conducted material inspections and ensured compliance with project specifications and industry standards, overseeing quality assurance throughout various phases of the project.</li>
+                <li>Worked closely with suppliers to ensure materials met the required specifications, coordinating material delivery schedules to align with project timelines.</li>
+                <li>Prepared and reviewed technical documents, including material test reports, inspection reports, and compliance certificates for internal use and client submission.</li>
+                <li>Performed quality checks on materials and components, ensuring they met the required mechanical properties, chemical composition, and dimensional accuracy.</li>
+                <li>Provided on-site technical support during the installation and testing of materials, ensuring proper handling and usage according to specifications.</li>
+                <li>Managed inventory levels of critical materials, ensuring continuous availability without project delays.</li>
+            </ul>
+
+            <h2>Courses & Certifications</h2>
+            <p>Non-Destructive Testing (NDT) – ASNT Level II in Visual Inspection, Dye Penetrant Testing, Magnetic Particle Testing, Radiographic Testing, and Ultrasonic Testing.</p>
+
+            <h2>Technical Skills</h2>
             <ul>
                 <li>Equipment Maintenance and Repair</li>
                 <li>Preventive Maintenance</li>
-                <li>Non-Destructive Testing (ASNT Level II)</li>
+                <li>Safety Compliance</li>
+                <li>HVAC Systems</li>
+                <li>Hydraulic Systems</li>
                 <li>CAD Software (AutoCAD, SolidWorks)</li>
+                <li>Microsoft Office Suite</li>
             </ul>
+
+            <h2>Soft Skills</h2>
+            <ul>
+                <li>Problem-Solving</li>
+                <li>Team Collaboration</li>
+                <li>Attention to Detail</li>
+                <li>Time Management</li>
+                <li>Communication</li>
+                <li>Adaptability</li>
+            </ul>
+
+            <h2>Graduation Project</h2>
+            <h3>Enhancement of Combustion Efficiency in Internal Combustion Engines</h3>
+            <p>Objective: Improve combustion efficiency using an ozone generator to enhance performance and reduce emissions.</p>
+            <p>Results: Achieved a 12% increase in fuel efficiency and a 15% reduction in emissions.</p>
 
             <h2>Languages</h2>
             <p>Arabic: Native | English: Very Good</p>
@@ -120,7 +163,7 @@
     </div>
 
     <footer>
-        <p>Connect with me on LinkedIn or via email at <a href="mailto:Abdallaosama427@gmail.com">Abdallaosama427@gmail.com</a></p>
+        <p>Connect with me via email at <a href="mailto:abdallaosama11@outlook.com">abdallaosama11@outlook.com</a></p>
     </footer>
 
 </body>
